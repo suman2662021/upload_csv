@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 
-input[type="file"] {
+input[type="file"], select {
     display: block;
     margin: 20px auto;
 }

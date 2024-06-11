@@ -11,10 +11,15 @@
         <h1>Upload CSV and Submit Data</h1>
         <form id="csv-form">
             <input type="file" id="csv-file" accept=".csv">
+            <select id="endpoint-select">
+                <option value="https://apply.jlu.edu.in/api/send-lead-data?vendor=26571&secretkey=kalamacademy_jlu">JLU</option>
+                <option value="https://forms.vgu.ac.in/api/send-lead-data?vendor=22307&secretkey=kaunsacollege_vgu">VGU</option>
+            </select>
             <button type="button" id="submit-btn">Submit</button>
         </form>
         <div id="status"></div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
